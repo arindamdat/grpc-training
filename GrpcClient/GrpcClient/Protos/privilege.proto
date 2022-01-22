@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package userManagement.privileges;
+
+service PrivilegeSetService {
+	// get list of privilege-sets as stream
+	rpc GetPrivilegeSets (GetPrivilegeSetsRequest) returns (stream PrivilegeSet);
+	// get list of privilege-sets as container object
+	rpc GetPrivilegeSetList (GetPrivilegeSetsRequest) returns (PrivilegeSetListResponse);
+}
+
+message GetPrivilegeSetsRequest{}
+
+message AccessLevel {
+  string id = 1;
+  string name = 2;
+}
+
+message Privilege {
+	string id = 1;
+	string name = 2;
+	AccessLevel accessLevel = 3;
+}
+
+message PrivilegeSet {
+	string id = 1;
+	string name = 2;
+	repeated Privilege privileges = 3;
+}
+message PrivilegeSetListResponse{
+	repeated PrivilegeSet items = 1;
+}
+
+

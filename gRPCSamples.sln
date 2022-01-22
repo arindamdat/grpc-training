@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{D256FA91-EBAE-414D-BE69-9135D1E116CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Servers", "Servers", "{EC0F6A4B-99E5-4554-A5A2-E99ED6B3C4F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Phase1", "Phase1", "{2A0E2F37-6892-436E-A05A-5F531423D0AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcClient", "GrpcClient\GrpcClient\GrpcClient.csproj", "{4CC53808-9171-43EE-90A9-1EB9E3223C15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcService", "Phase1\GrpcService\GrpcService.csproj", "{2BF29245-EDD9-4538-A819-63F29576F530}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CC53808-9171-43EE-90A9-1EB9E3223C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC53808-9171-43EE-90A9-1EB9E3223C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC53808-9171-43EE-90A9-1EB9E3223C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC53808-9171-43EE-90A9-1EB9E3223C15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF29245-EDD9-4538-A819-63F29576F530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF29245-EDD9-4538-A819-63F29576F530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF29245-EDD9-4538-A819-63F29576F530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF29245-EDD9-4538-A819-63F29576F530}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2A0E2F37-6892-436E-A05A-5F531423D0AC} = {EC0F6A4B-99E5-4554-A5A2-E99ED6B3C4F9}
+		{4CC53808-9171-43EE-90A9-1EB9E3223C15} = {D256FA91-EBAE-414D-BE69-9135D1E116CC}
+		{2BF29245-EDD9-4538-A819-63F29576F530} = {2A0E2F37-6892-436E-A05A-5F531423D0AC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E4CC46E-8E15-4CA6-A9D2-668E5F2C1413}
+	EndGlobalSection
+EndGlobal
